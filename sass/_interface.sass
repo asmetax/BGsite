@@ -1,0 +1,203 @@
+.btn
+	font-size: 15px
+	font-weight: 700
+	color: $text-color-light
+	padding: 18px 32px
+	background: transparent url(../img/button-bg.png) center no-repeat
+	background-size: contain
+	border: 2px solid transparent
+	cursor: pointer
+	transition: all 0.5s
+	&:hover
+		filter: drop-shadow(0px 0px 2px $text-color-dark) contrast(175%) saturate(85%)
+	&-o
+		border: 2px solid $text-color-light
+		border-radius: 30px
+		background: transparent
+		padding: 14px 28px
+  transition: color 300ms
+  position: relative
+  overflow: hidden
+  transition: background-color 0.3s
+  &:hover
+  	color: $text-color-dark
+  	background-color: $text-color-light
+		& span
+			display: inline-block
+			color: $text-color-light
+			margin-right: -4px
+			opacity: 0
+			transform: translate3d(0, -10px, 0)
+			transition: transform 0.3s, opacity 0.3s
+			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1)
+			&:last-child
+				margin-right: 0
+		&::before
+			content: attr(data-text)
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			padding: 1em 0
+			transition: transform 0.3s, opacity 0.3s
+			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1)
+		&:hover::before
+			opacity: 0
+			transform: translate3d(0, 100%, 0)
+		&:hover > span
+			color: $text-color-dark
+			opacity: 1
+			transform: translate3d(0, 0, 0)
+		&:hover > span:nth-child(1)
+			transition-delay: 0.045s;
+		&:hover > span:nth-child(2)
+			transition-delay: 0.09s
+		&:hover > span:nth-child(3)
+			transition-delay: 0.135s
+		&:hover > span:nth-child(4)
+			transition-delay: 0.18s
+		&:hover > span:nth-child(5)
+			transition-delay: 0.225s
+		&:hover > span:nth-child(6)
+			transition-delay: 0.27s
+		&:hover > span:nth-child(7)
+			transition-delay: 0.315s
+		&:hover > span:nth-child(8)
+			transition-delay: 0.36s
+		&:hover > span:nth-child(9)
+			transition-delay: 0.405s
+		&:hover > span:nth-child(10)
+			transition-delay: 0.45s
+		&:hover > span:nth-child(11)
+			transition-delay: 0.495s
+		&:hover > span:nth-child(12)
+			transition-delay: 0.585s
+		&:hover > span:nth-child(13)
+			transition-delay: 0.63s
+		&:hover > span:nth-child(14)
+			transition-delay: 0.675s
+		&:hover > span:nth-child(15)
+			transition-delay: 0.72s
+
+
+
+
+
+
+.slider
+	&-dots
+		position: absolute
+		bottom: -277px
+		left: calc(50% - 29px)
+		padding: 0
+		li
+			position: relative
+			display: inline-block
+			width: 14px
+			height: 14px
+			margin-right: 4px
+			button 
+			  font-size: 0
+			  border-radius: 50%
+			  line-height: 0
+			  display: block
+			  width: 14px
+			  height: 14px
+			  padding: 5px
+			  cursor: pointer
+			  color: transparent
+			  border: 2px solid #fff
+			  background: transparent
+			  &:active, &:hover
+			  	background: $active-color
+			  	border: 2px solid transparent
+		&__partners
+			bottom: -30px	
+			li
+				button
+					border: 2px solid $active-color
+	&-arrow
+		display: block
+		width: 100px
+		height: 100%
+		background-color: transparent
+		cursor: pointer
+		position: absolute
+		top: 30px
+		z-index: 1
+		&__left
+			width: 50px
+			height: 100px
+			cursor: pointer
+			left: 30px
+			&:before, &:after
+				content: ''
+				display: block
+				background-color: $text-color-light
+				width: 33px
+				height: 2px
+				position: absolute
+				color: #000
+				transition: all 0.5s
+			&:before
+				transform: rotate(-45deg)
+				top: 37px
+			&:after
+				transform: rotate(45deg)
+				top: 59px
+			&:hover
+			 &:before
+		 		transform: rotate(-60deg)
+		 		top: 36px
+				&:after
+			 	transform: rotate(60deg)
+			 	top: 64px
+		&__right
+			width: 50px
+			height: 100px
+			cursor: pointer
+			right: 15px
+			&:before, &:after
+				content: ''
+				display: block
+				background-color: $text-color-light
+				width: 33px
+				height: 2px
+				position: absolute
+				color: #000
+				transition: all 0.5s
+			&:before
+				transform: rotate(45deg)
+				top: 37px
+			&:after
+				transform: rotate(-45deg)
+				top: 59px
+			&:hover
+			 &:before
+		 		transform: rotate(60deg)
+		 		top: 36px
+				&:after
+			 	transform: rotate(-60deg)
+			 	top: 64px
+.slider-dots li.slick-active button
+		  		background: $active-color
+		  		border: 2px solid transparent
+.section-title h2
+	text-align: center
+	position: relative
+	font-size: 23px
+	font-weight: 700
+	line-height: 24px
+	text-transform: uppercase
+	&:before, &:after
+		content: url(../img/title-line.png)
+		display: block
+		position: absolute
+		top: -7px
+	&:before
+		left: 29.5%
+	&:after
+		right: 29.5%
+
+

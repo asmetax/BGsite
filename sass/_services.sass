@@ -1,0 +1,71 @@
+.services
+	padding: 100px 0 83px 0
+	background-color: #f8f8f8
+	color: $text-color-dark
+	&-wrap
+		margin-top: -217px
+		padding-top: 42px
+		background-color: #f8f8f8
+	&-block
+		display: flex
+		align-items: center;
+		justify-content: flex-end
+		height: 179px
+		padding: 25px
+		background-color: $text-color-light
+		margin-bottom: 10px
+		margin-right: 4px
+		transition: all 0.5s
+		&s
+			margin-top: 55px
+		&:hover
+			background-color: $text-color-dark
+			color: $text-color-light
+			transition: all 0.2s
+			& .services-block__descr
+				margin-top: -60px
+				margin-right: 15px
+				transition: all 0.3
+			button
+				opacity: 1
+				& > span
+					color: $text-color-dark
+		&__travel:hover
+			background: $text-color-dark url(../img/services/travel-o.png) 10% 50% no-repeat
+		&__delivery:hover
+			background: $text-color-dark url(../img/services/delivery-o.png) 10% 50% no-repeat
+		&__lock:hover
+			background: $text-color-dark url(../img/services/lock-o.png) 10% 50% no-repeat
+		&__cont:hover
+			background: $text-color-dark url(../img/services/cont-o.png) 10% 50% no-repeat
+		&__box:hover
+			background: $text-color-dark url(../img/services/box-o.png) 10% 50% no-repeat
+		&__calc:hover
+			background: $text-color-dark url(../img/services/calc-o.png) 10% 50% no-repeat
+		& .btn-o
+			position: absolute
+			display: block
+			bottom: 40px
+			right: 40px
+			opacity: 0
+			& > span
+				color: $text-color-light
+		&__descr
+			text-align: right
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+			padding-left: 50%
+			margin-right: 15px
+		&__travel
+			background: $text-color-light url(../img/services/travel.png) 10% 50% no-repeat
+		&__delivery
+			background: $text-color-light url(../img/services/delivery.png) 10% 50% no-repeat
+		&__lock
+			background: $text-color-light url(../img/services/lock.png) 10% 50% no-repeat
+		&__cont
+			background: $text-color-light url(../img/services/cont.png) 10% 50% no-repeat
+		&__box
+			background: $text-color-light url(../img/services/box.png) 10% 50% no-repeat
+		&__calc
+			background: $text-color-light url(../img/services/calc.png) 10% 50% no-repeat

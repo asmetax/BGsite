@@ -1,0 +1,108 @@
+.nav-main
+	margin-top: 35px
+ margin-bottom: 0
+	list-style: none
+	padding-left: 0
+	display: flex
+	line-height: 28px
+	& li:last-child
+		margin-right: 0
+		transition: all 0.5s
+		&:hover
+			filter: contrast(175%) saturate(85%)
+		& a:hover:after
+			display: none
+	&__item
+		margin-right: 47px
+		font-size: 16px
+		font-weight: 700
+		a
+			text-decoration: none
+			color: inherit
+			position: relative
+			&:after
+				position: absolute
+				content: ''
+				bottom: -10px
+				width: 38px
+				height: 2px
+				background-color: #0b5e8f
+				opacity: 0
+				left: -30%
+				transition: all 0.5s
+			&:hover:after, &:active:after, &:focus:after, &.active:after
+				display: block
+				left: 0%
+				transition: all 0.5s
+				opacity: 1
+.mob-nav
+	z-index: 10
+	position: fixed
+	width: 100%
+	top: -400px
+	transition: 1s
+.nav-mob
+	transition: 1s
+	width: 100%
+	background-color: $text-color-dark
+	padding: 15px
+	margin: 0
+	text-align: center
+	display: flex
+	flex-flow: column
+	&__item
+		list-style: none
+		margin-bottom: 20px
+		&:focus
+			background: rgba($text-color-light, 0.5)
+		a
+			text-decoration: none
+			color: $text-color-light
+.burger
+	display: block
+	width: 40px
+	height: 40px
+	position: fixed
+	top: 25px
+	left: 25px
+	z-index: 100
+	background: #242830
+	margin-top: 5px
+	span, span:after, span:before
+		display: block
+		height: 2px
+		width: 35px
+		background-color: #fff
+		position: absolute
+		left: 50%
+		margin-left: -18px
+		top: 45%
+		transition: all 0.5s
+	& span:after
+		content: ''
+		margin-top: 9px
+		transition: all 0.5s
+	& span:before
+		content: ''
+		margin-top: -10px
+		transition: all 0.5s
+	&_active
+		span
+			background-color: transparent
+			&:before
+				transform: rotate(135deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-135deg)
+				margin-top: 0
+.body-pushed
+	top: 250px
+	transition: 1s
+.pushed-menu
+	top: 0px
+	transition: 1s
+.transition
+	transition: 2s
+
+
+

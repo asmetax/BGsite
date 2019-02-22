@@ -1,0 +1,419 @@
+.main
+	background: #f8f8f8
+	padding: 67px 0 100px 0
+	color: $text-color-dark
+	position: relative
+	z-index: 0
+	&:after 
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    background: #f8f8f8 url(../img/services-bg.png) no-repeat
+    width: 100%
+    height: 100%
+    opacity: 0.15
+    z-index: -1
+	&-title
+		font-size: 23px
+		font-weight: 700
+		line-height: 24px
+		margin-bottom: 20px
+		text-transform: uppercase
+	&-text
+		font-size: 16px
+		font-weight: 400
+		margin-bottom: 48px
+	&-img
+		display: flex
+		& img:last-child
+			margin-right: 0
+		&__img
+			width: 48.7%
+			max-height: 223px
+			margin-right: 15px
+			margin-bottom: 53px
+	&-feedback__block
+		background: #fff
+		padding: 31px 26px
+		margin-bottom: 10px
+		&-last
+			margin-bottom: 46px
+		&-title
+			font-size: 16px
+			font-weight: 700
+			margin-bottom: 9px
+		&-text
+			font-weight: 400
+			line-height: 24px
+	&-form
+		textarea
+			font-family: 'Roboto'
+		&__input
+			background-color: $text-color-light
+			border: 1px solid 4f4f4f
+			font-size: 15px
+			font-weight: 400
+			color: $text-color-dark
+			&:focus
+				background: $text-color-light
+			&::placeholder
+				font-size: 15px
+				font-weight: 400
+				color: $text-color-dark
+			&-name
+				width: 322px
+				margin-right: 10px
+				height: 52px
+				margin-bottom: 11px
+				padding-left: 21px
+			&-tel
+				width: 322px
+				height: 52px
+				margin-bottom: 11px
+				padding-left: 21px
+			&-text
+				width: 100%
+				height: 118px
+				padding: 20px
+				margin-bottom: 14px
+		&__btn
+			width: 205px
+			margin-bottom: 48px
+	&-table
+		background: #fff
+		border-collapse: collapse
+		margin-bottom: 50px
+		& th:last-child, & td:last-child
+			border-right: none
+		& tr:last-child td
+			border-bottom: none
+		th, td
+			padding: 20px 9px
+			text-align: center
+			border-right: 1px solid #eeeeee
+		th
+			background: url(../img/table.png) 0 0 no-repeat
+			background-size: cover
+			font-size: 15px
+			font-weight: 700
+			color: $text-color-light
+			border-right: 1px solid #0f547c
+		td
+			border-bottom: 1px solid #eeeeee
+			color: $text-color-dark
+	&-list
+		color: $text-color-dark
+		font-size: 15px
+		font-weight: 700
+		&__ul
+			padding-left: 20px 
+			li
+				list-style-image: url(../img/disc.png)
+		&__li
+			margin-bottom: 15px
+			a
+				text-decoration: none
+				color: $text-color-dark
+				&:hover
+					color: #136493
+					text-decoration: underline
+	&-aside
+		color: $text-color-dark
+		&__title
+			font-size: 20px
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 22px
+		&__block-wrap
+			font-size: 16px
+			font-weight: 400
+			background: $text-color-light
+			color: $text-color-dark
+			transition: all 0.1s
+			a
+				color: inherit
+				text-decoration: none
+			&:hover
+				background: url(../img/aside-hover.png) center no-repeat
+				background-size: cover
+				color: $text-color-light
+			&-active
+				background: url(../img/aside-hover.png) center no-repeat
+				background-size: cover
+				color: $text-color-light
+				& .main-aside__block-wrap-travel
+					background: url(../img/services/travel-o.png) 10% 50% no-repeat
+					background-size: 10%
+				& .main-aside__block-wrap-delivery
+					background: url(../img/services/delivery-o.png) 10% 50% no-repeat
+					background-size: 10%
+				& .main-aside__block-wrap-lock
+					background: url(../img/services/lock-o.png) 10% 50% no-repeat
+					background-size: 10%
+				& .main-aside__block-wrap-cont
+					background: url(../img/services/cont-o.png) 10% 50% no-repeat
+					background-size: 10%
+				& .main-aside__block-wrap-box
+					background: url(../img/services/box-o.png) 10% 50% no-repeat
+					background-size: 10%
+				& .main-aside__block-wrap-calc
+					background: url(../img/services/calc-o.png) 10% 50% no-repeat
+					background-size: 7%
+			&-travel
+				background:url(../img/services/travel.png) 10% 50% no-repeat
+				background-size: 10%
+				padding: 25px 0 25px 90px
+				transition: all 0.25s
+				&:hover
+					background: url(../img/services/travel-o.png) 10% 50% no-repeat
+					background-size: 10%
+			&-delivery
+				background: url(../img/services/delivery.png) 10% 50% no-repeat
+				background-size: 10%
+				padding: 25px 0 25px 90px
+				transition: all 0.25s
+				&:hover
+					background: url(../img/services/delivery-o.png) 10% 50% no-repeat
+					background-size: 10%
+			&-lock
+				background: url(../img/services/lock.png) 10% 50% no-repeat
+				background-size: 10%
+				padding: 25px 0 25px 90px
+				transition: all 0.25s
+				&:hover
+					background: url(../img/services/lock-o.png) 10% 50% no-repeat
+					background-size: 10%
+			&-cont
+				background: url(../img/services/cont.png) 10% 50% no-repeat
+				background-size: 10%
+				padding: 25px 0 25px 90px
+				transition: all 0.25s
+				&:hover
+					background: url(../img/services/cont-o.png) 10% 50% no-repeat
+					background-size: 10%
+			&-box
+				background: url(../img/services/box.png) 10% 50% no-repeat
+				background-size: 10%
+				padding: 25px 0 25px 90px
+				transition: all 0.25s
+				&:hover
+					background: url(../img/services/box-o.png) 10% 50% no-repeat
+					background-size: 10%
+			&-calc
+				background: url(../img/services/calc.png) 10% 50% no-repeat
+				background-size: 7%
+				padding: 25px 0 25px 90px
+				transition: all 0.25s
+				&:hover
+					background: url(../img/services/calc-o.png) 10% 50% no-repeat
+					background-size: 7%
+@media screen and (max-width: 1250px)
+	table.main-table
+		width: 100%
+		thead
+			display: none
+			border: none
+		tr 
+	  margin-bottom: 10px
+	  display: block
+	  border-bottom: 2px solid #a0a0a0
+	  &:last-child
+	  	margin-bottom: 0
+		tr
+	  border: 1px solid #a0a0a0
+	  text-align: center
+	  & td:last-child
+	  	border: none
+	  &:last-child td 
+   	border-bottom: 1px solid #eeeeee
+   	&:last-child
+   		border: none
+
+ 	td
+	  display: block
+	  text-align: center
+	  font-size: 13px
+	  width: 100%
+		td
+			&:before
+    content: attr(data-label)
+    float: left
+    text-transform: uppercase
+    font-weight: bold
+    display: block
+    padding: 0 30px
+    background: #0b5e8f
+    padding: 20px 30px
+    background: #0b5e8f
+    color: #fff
+    width: 50%
+    text-align: center
+    margin-top: -20px
+    margin-left: -10px
+   &:after
+   	display: none
+   	width: 50%
+   	height: 1px
+   	position: absolute
+   	top: 50%
+   	left: 50%
+   	background: #000
+@media (min-width: 993px) and (max-width: 1200px)
+	.main-aside__block-wrap
+		font-size: 14px
+		&-travel
+			padding: 25px 0 25px 70px
+		&-delivery
+			padding: 25px 0 25px 70px
+		&-lock
+			padding: 25px 0 25px 70px
+		&-cont
+			padding: 25px 0 25px 70px
+		&-box
+			padding: 25px 0 25px 70px
+		&-calc
+			padding: 25px 0 25px 70px
+	.main-form__input
+		&-name,	&-tel
+			width: 40%
+@media (min-width: 768px) and (max-width: 992px)
+	.main-aside__block-wrap
+		font-size: 12px
+		font-weight: bold
+		&-travel
+			padding: 25px 5px
+			background: none!important
+			text-align: center
+		&-delivery
+			padding: 25px 5px
+			background: none!important
+			text-align: center
+		&-lock
+			padding: 25px 5px
+			background: none!important
+			text-align: center
+		&-cont
+			padding: 25px 5px
+			background: none!important
+			text-align: center
+		&-box
+			padding: 25px 5px
+			background: none!important
+			text-align: center
+		&-calc
+			padding: 25px 5px
+			background: none!important
+			text-align: center
+	.main-form__input
+		&-name,	&-tel
+			width: 100%
+@media (min-width: 576px) and (max-width: 767px)
+	.main-aside
+		margin-bottom: 50px
+		&__block-wrap
+			font-size: 15px
+			&-travel
+				padding: 25px 5px
+				text-align: center
+			&-delivery
+				padding: 25px 5px
+				text-align: center
+			&-lock
+				padding: 25px 5px
+				text-align: center
+			&-cont
+				padding: 25px 5px
+				text-align: center
+			&-box
+				padding: 25px 5px
+				text-align: center
+			&-calc
+				padding: 25px 5px
+				text-align: center
+	.main-form__input
+		&-name,	&-tel
+			width: 100%
+@media (min-width: 1px) and (max-width: 575px)
+	.main-aside
+		margin-bottom: 50px
+		&__block-wrap
+			font-size: 15px
+			&-travel
+				padding: 25px 25px
+				text-align: center
+				background: none
+				&:hover
+					background: none
+			&-delivery
+				padding: 25px 25px
+				text-align: center
+				background: none
+				&:hover
+					background: none
+			&-lock
+				padding: 25px 25px
+				text-align: center
+				background: none
+				&:hover
+					background: none
+			&-cont
+				padding: 25px 25px
+				text-align: center
+				background: none
+				&:hover
+					background: none
+			&-box
+				padding: 25px 25px
+				text-align: center
+				background: none
+				&:hover
+					background: none
+			&-calc
+				padding: 25px 25px
+				text-align: center
+				background: none
+				&:hover
+					background: none
+	.main-aside__block-wrap-active
+		& .main-aside__block-wrap-travel
+			background: none
+		& .main-aside__block-wrap-delivery
+			background: none
+		& .main-aside__block-wrap-lock
+			background: none
+		& .main-aside__block-wrap-cont
+			background: none
+		& .main-aside__block-wrap-box
+			background: none
+		& .main-aside__block-wrap-calc
+			background: none
+	.main-img
+		flex-flow: column
+		&__img
+			width: 100%
+			margin-right: 0
+			margin-bottom: 20px
+	.main-form__input-name, .main-form__input-tel
+		width: 100%
+	table.main-table td
+		&:last-child
+			&:after
+				display: none
+		padding: 10px
+		font-size: 12px
+		&:before
+			padding: 11px 5px
+			margin-top: -11px
+			font-size: 10px
+		&:after
+			display: block
+			content: ''
+			width: 50%
+			z-index: 10
+			height: 1px
+			position: relative
+   top: 11px
+   left: -10px
+   background: #fff
